@@ -3,6 +3,20 @@ echo $this->section("content"); ?>
 
 <div class="row">
   <div class="col-md-12">
+    <div class="card">
+        <div class="card-header">
+
+        <div class="row">
+        <div class="col-md-6">
+            <h1>Semua Film</h1>
+        </div>
+        <div class="col-md-6 text-end">
+            <a href="/film/add" class="btn btn-primary">Tambah Data</a>
+        </div>
+    </div>
+        </div>
+    </div>
+    
   <table class="table table-hover">
                 <tr>
                     <th>No.</th>
