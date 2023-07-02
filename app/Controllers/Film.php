@@ -102,6 +102,8 @@ class Film extends BaseController
             'cover' => $imageName,
         ];
         $this->film->save($data);
+        session()->setFlashData('success', 'Data berhasil disimpan');
         return redirect()->to('/film');
     }
+    
 }
