@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layar Kaca 31</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <script src="/assets/js/unpkg.com_sweetalert@2.1.2_dist_sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -40,6 +41,19 @@
     </div>
 
     <script src="/assets/js/bootstrap.min.js"></script>
+
+
+    <?php if (session()->getFlashdata('success')) : ?>
+        <script>
+            swal({
+                title: "Informasi",
+                text: "<?= session()->getFlashdata('success') ?>",
+                icon: "success",
+                button: "OK",
+            });
+        </script>
+
+    <?php endif; ?>
 </body>
 
 </html>
