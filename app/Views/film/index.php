@@ -5,7 +5,6 @@ echo $this->section("content"); ?>
   <div class="col-md-12">
     <div class="card">
         <div class="card-header">
-
         <div class="row">
         <div class="col-md-6">
             <h1>Semua Film</h1>
@@ -46,8 +45,8 @@ echo $this->section("content"); ?>
                             <?= $film["duration"] ?>
                         </td>
                         <td>
-                            <a href="" class="btn btn-success">Update</a>
-                            <a href="" class="btn btn-danger">Delete</a>
+                        <a href="/film/update/<?= $film["id"]; ?>" class="btn btn-success">Update</a>
+                        <a href="" class="btn btn-danger">Delete</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
