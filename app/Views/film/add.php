@@ -15,7 +15,7 @@ $this->section("content");?>
                 </div>
             </div>
             <div class="card-body">
-                <form action="/film/store" method="POST" enctype="multipart/form-data"">
+                <form action="/film/store" method="POST" enctype="multipart/form-data">
                     <div class="row">
                     <div class="col-md-6">
                             <label for="nama_film" class="form-label">Nama Film</label>
@@ -69,11 +69,6 @@ $this->section("content");?>
         </div>
     </div>
 </div>
-
-
-
-
-
 
 
  <?php $this->endSection(); ?>
